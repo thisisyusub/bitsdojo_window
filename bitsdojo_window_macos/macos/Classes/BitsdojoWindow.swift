@@ -41,7 +41,7 @@ open class BitsdojoWindow: NSWindow {
         self.titlebarAppearsTransparent = true
         self.titleVisibility = .hidden
         self.isOpaque = false
-        self.isMovable = false
+        self.isMovable = true
     }
     super.order(place, relativeTo: otherWin)
     let windowCanBeShown: Bool = bdwPrivateAPI.windowCanBeShown();
